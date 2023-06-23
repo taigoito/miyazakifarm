@@ -143,7 +143,7 @@ button, input, select, textarea {
 /**
  * Layout
  */
-.hero, .header__container, .--flexItem_12, .--flexItem_11, .--flexItem_10, .--flexItem_9, .--flexItem_8, .--flexItem_7, .--flexItem_6, .--flexItem_5, .--flexItem_4, .--flexItem_3, .--flexItem_2, .postList.--list .postItem__content, .postList.--list .postItem__image, .postList.--grid .postList__item, .postItem.--single .postItem__content, .postItem.--single .postItem__image {
+.header__container, .--flexItem_12, .--flexItem_11, .--flexItem_10, .--flexItem_9, .--flexItem_8, .--flexItem_7, .--flexItem_6, .--flexItem_5, .--flexItem_4, .--flexItem_3, .--flexItem_2, .postList.--list .postItem__content, .postList.--list .postItem__image, .postList.--grid .postList__item, .postItem.--single .postItem__content, .postItem.--single .postItem__image {
   position: relative;
   flex: auto;
   width: 100%;
@@ -156,7 +156,7 @@ button, input, select, textarea {
   padding-right: 0.75rem;
 }
 
-.hero, .header__container {
+.header__container {
   padding-left: clamp(0.75rem, 2%, 24px);
   padding-right: clamp(0.75rem, 2%, 24px);
 }
@@ -176,6 +176,9 @@ button, input, select, textarea {
   height: 100%;
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
+  transition: all 0.35s ease-in-out;
+}
+.header__inner:hover {
   background-color: #ffffff;
 }
 .header__container {
@@ -359,7 +362,7 @@ button, input, select, textarea {
  * Component - Cover
  */
 .cover {
-  position: relative;
+  position: fixed;
   top: 0;
   left: 0;
   z-index: -1;
@@ -921,24 +924,13 @@ button, input, select, textarea {
  * Project - Hero
  */
 .hero {
-  max-width: 1200px;
-  height: 18rem;
-  margin: 6rem auto;
-}
-@media (min-width: 900px) {
-  .hero {
-    height: 27rem;
-  }
-}
-@media (min-width: 900px) {
-  .hero {
-    height: 36rem;
-  }
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
 }
 .hero__content {
-  height: 100%;
-  border-radius: 1.5rem;
-  overflow: hidden;
+  width: 18rem;
 }
 
 /**
@@ -951,6 +943,7 @@ button, input, select, textarea {
   align-items: center;
   padding-top: 6rem;
   padding-bottom: 6rem;
+  background-color: #ffffff;
 }
 .section__inner.--switched {
   flex-direction: row-reverse;
@@ -970,15 +963,15 @@ button, input, select, textarea {
 }
 
 #about-taste .section__image {
-  background-image: url("./assets/story_12.jpg");
+  background: url("./assets/story_12.jpg") no-repeat center center/cover scroll;
 }
 
 #about-us .section__image {
-  background-image: url("./assets/story_03.jpg");
+  background: url("./assets/story_03.jpg") no-repeat center center/cover scroll;
 }
 
 #shop .section__image {
-  background-image: url("./assets/story_04.jpg");
+  background: url("./assets/story_04.jpg") no-repeat center center/cover scroll;
 }
 
 /**

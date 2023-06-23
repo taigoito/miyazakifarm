@@ -3,21 +3,12 @@
  */
 
 .hero {
-  @include container();
-  height: 18rem;
-  margin: $headerHeight auto;
-
-  @media (min-width: breakpoint("md")) {
-    height: 27rem;
-  }
-
-  @media (min-width: breakpoint("md")) {
-    height: 36rem;
-  }
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
 
   &__content {
-    height: 100%;
-    border-radius: space(3);
-    overflow: hidden;
+    width: 18rem;
   }
 }
