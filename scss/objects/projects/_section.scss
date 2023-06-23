@@ -41,4 +41,11 @@
       background: url("./assets/story_04.jpg") no-repeat center center / cover scroll;
     }
   }
+
+  &__more {
+    .icon {
+      vertical-align: middle;
+      transform: rotate(-30deg);
+    }
+  }
 }
