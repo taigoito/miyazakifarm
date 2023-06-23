@@ -3,7 +3,7 @@
  */
 
 .cover {
-  position: fixed;
+  position: relative;
   top: 0;
   left: 0;
   z-index: -1;
@@ -16,24 +16,31 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(rgba(0, 0, 0, 0),  rgba(0, 0, 0, 0.3),  rgba(0, 0, 0, 0)), url("./assets/sampleImg00.jpg") no-repeat center center / cover scroll;
-    filter: $blur;
-    //background-image: url("./assets/sampleImg00.jpg");
-    //background-position: center center;
-    //background-size: cover;
+    //background: linear-gradient(rgba(0, 0, 0, 0),  rgba(0, 0, 0, 0.3),  rgba(0, 0, 0, 0)), url("./assets/header_bg.jpg") no-repeat center center / cover scroll;
+    //filter: $blur;
+    //background-image: url("./assets/story_00.jpg");
+    background-position: center center;
+    background-size: cover;
     transition: 1s linear opacity;
 
     // Fader用クラス
     // 画像の数とパスを設定
-    @for $i from 1 through 4 {
-      &.--num_#{$i} {
-        //background-image: url("./assets/img0#{$i}.jpg");
-      }
+    &.--num_1 {
+      background-image: url("./assets/story_01.jpg");
+    }
+    &.--num_2 {
+      background-image: url("./assets/story_02.jpg");
+    }
+    &.--num_3 {
+      background-image: url("./assets/story_10.jpg");
+    }
+    &.--num_4 {
+      background-image: url("./assets/story_11.jpg");
     }
     
     &.--fade {
-      //opacity: 0;
-      //transition: none;
+      opacity: 0;
+      transition: none;
     }
   }
 
