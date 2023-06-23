@@ -176,10 +176,16 @@ button, input, select, textarea {
   height: 100%;
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
+  background-color: #ffffff;
   transition: all 0.35s ease-in-out;
 }
 .header__inner:hover {
   background-color: #ffffff;
+}
+@media (min-width: 1200px) {
+  .header__inner {
+    background-color: transparent;
+  }
 }
 .header__container {
   max-width: 1200px;
@@ -200,6 +206,11 @@ button, input, select, textarea {
   flex: 0 1 12rem;
   margin: 0;
   line-height: 1;
+}
+@media (min-width: 1200px) {
+  .header:not(:hover) .gNav__siteBrand img {
+    filter: invert(1) grayscale(1) brightness(4);
+  }
 }
 .gNav__primaryMenu {
   display: flex;
@@ -225,6 +236,11 @@ button, input, select, textarea {
   margin: 0;
   line-height: 1;
 }
+@media (min-width: 1200px) {
+  .header:not(:hover) .gNav__menuItem a {
+    color: #ffffff;
+  }
+}
 .gNav__menuItem:nth-child(4) a::after {
   content: "";
   display: inline-block;
@@ -237,6 +253,11 @@ button, input, select, textarea {
 .gNav__menuItem:nth-child(4) a:hover::after {
   background: url("./assets/okome.svg") no-repeat center center;
 }
+@media (min-width: 1200px) {
+  .header:not(:hover) .gNav__menuItem:nth-child(4) a::after {
+    background: url("./assets/okome.svg") no-repeat center center;
+  }
+}
 .gNav__menuItem:nth-child(4) a, .gNav__menuItem:nth-child(5) a {
   padding: 0.5rem 1rem;
   border: 1px solid hsl(352, 65%, 30%);
@@ -246,6 +267,11 @@ button, input, select, textarea {
   border-color: hsl(352, 50%, 45%);
   background-color: hsl(352, 50%, 45%);
   color: #ffffff;
+}
+@media (min-width: 1200px) {
+  .header:not(:hover) .gNav__menuItem:nth-child(4) a, .header:not(:hover) .gNav__menuItem:nth-child(5) a {
+    border-color: #ffffff;
+  }
 }
 
 /**

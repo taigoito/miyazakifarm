@@ -10,6 +10,14 @@
     flex: 0 1 12rem;
     margin: 0;
     line-height: 1;
+
+    @media (min-width: breakpoint("lg")) {
+      @at-root .header:not(:hover) & {
+        img {
+          filter: $whiten;
+        }
+      }
+    }
   }
 
   &__primaryMenu {
@@ -30,6 +38,14 @@
     margin: 0;
     line-height: 1;
 
+    a {
+      @media (min-width: breakpoint("lg")) {
+        @at-root .header:not(:hover) & {
+          color: themeColor("lightest");
+        }
+      }
+    }
+
     &:nth-child(4) a {
       &::after {
         content: "";
@@ -44,6 +60,14 @@
       &:hover::after {
         background: url("./assets/okome.svg") no-repeat center center;
       }
+
+      @media (min-width: breakpoint("lg")) {
+        @at-root .header:not(:hover) & {
+          &::after {
+            background: url("./assets/okome.svg") no-repeat center center;
+          }
+        }
+      }
     }
 
     &:nth-child(4) a,
@@ -56,6 +80,12 @@
         border-color: $linkHoverColor;
         background-color: $linkHoverColor;
         color: themeColor("lightest");
+      }
+      
+      @media (min-width: breakpoint("lg")) {
+        @at-root .header:not(:hover) & {
+          border-color: themeColor("lightest");
+        }
       }
     }
   }

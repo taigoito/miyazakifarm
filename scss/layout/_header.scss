@@ -16,10 +16,15 @@ $headerHeight: 6rem;
     height: 100%;
     padding-top: 0.75rem;
     padding-bottom: 0.75rem;
+    background-color: $bodyBg;
     transition: all 0.35s ease-in-out;
 
     &:hover {
       background-color: $bodyBg;
+    }
+
+    @media (min-width: breakpoint("lg")) {
+      background-color: transparent;
     }
   }
 
