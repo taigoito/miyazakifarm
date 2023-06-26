@@ -25,13 +25,25 @@ new EvilIcons();
 new Fader();
 
 // Preloader
-//import Preloader from './preloader.js';
-new Preloader();
+//import Preloader from './js/preloader.js';
+//new Preloader();
 
 // Responsive Color
-//import ResponsiveColor from './responsiveColor.js';
-new ResponsiveColor();
+//import ResponsiveColor from './js/responsiveColor.js';
+//new ResponsiveColor();
 
 // Slider
-//import Slider from './slider.js';
-new Slider();
+//import Slider from './js/slider.js';
+//new Slider();
+
+// スクロールを監視し、ヘッダー色を変更
+const header = document.getElementById('header');
+window.addEventListener('scroll', () => {
+  if (window.innerHeight < window.scrollY) {
+    header.classList.add('--change');
+    console.log('add');
+  } else {
+    header.classList.remove('--change');
+    console.log('remove');
+  }
+});
