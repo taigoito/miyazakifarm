@@ -1057,9 +1057,16 @@ button, input, select, textarea {
   background: url("./assets/story_04.jpg") no-repeat center center/cover scroll;
 }
 
-.section__more .icon {
+.section__more {
+  margin-top: 3rem;
+}
+.section__moreBtn {
+  width: 6rem;
+  margin-right: 1.5rem;
   vertical-align: middle;
-  transform: rotate(-30deg);
+}
+a:hover .section__moreBtn {
+  opacity: 0.7;
 }
 
 /**
