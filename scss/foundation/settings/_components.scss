@@ -21,7 +21,7 @@ $blur:                 brightness(0.85) blur(1px) !default;
 $whiten:               invert(1) grayscale(1) brightness(4) !default;
 
 // Breakpoint
-$breakpoint:           900px !default;
+$breakpoint:           1200px !default;
 
 // Back To Top
 $backBtnBg:            $primary;
@@ -32,7 +32,7 @@ $backBtnHoverColor:    $white;
 
 // Drawer Menu
 $drawerAlwaysShown:    false !default;
-$drawerPad:            space(2) !default;
+$drawerPad:            space(3) !default;
 $drawerHeight:         48px !default;
 $drawerMenuDarkBg:     $primary !default;
 

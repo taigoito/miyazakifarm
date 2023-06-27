@@ -8,25 +8,36 @@
     padding-top: space(5);
     padding-bottom: space(5);
     background-color: themeColor("lightest");
+    flex-direction: column-reverse;
 
-    &.--switched {
-      flex-direction: row-reverse;
+    @media (min-width: breakpoint("md")) {
+      &.--switched {
+        flex-direction: row-reverse;
+      }
+
+      &:not(.--switched) { 
+        flex-direction: row;
+      }
     }
   }
 
   &__container {
-    width: 36rem;
-    padding-left: space(4);
-    padding-right: space(4);
+    width: min(36rem, 100%);
+    padding-left: clamp(1.5rem, 4%, 3rem);
+    padding-right: clamp(1.5rem, 4%, 3rem);
   }
 
   &__image {
-    width: 50%;
+    width: 100%;
     height: 80vh;
-    border-radius: space(3) 0 0 space(3);
 
-    @at-root .--switched & {
-      border-radius: 0 space(3) space(3) 0;
+    @media (min-width: breakpoint("md")) {
+      width: 50%;
+      border-radius: space(3) 0 0 space(3);
+
+      @at-root .--switched & {
+        border-radius: 0 space(3) space(3) 0;
+      }
     }
 
     @at-root #about-taste & {

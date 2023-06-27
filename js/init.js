@@ -10,7 +10,7 @@ new BackToTop();
 
 // Drawer Menu
 //import DrawerMenu from './drawerMenu.js';
-new DrawerMenu();
+new DrawerMenu({darkMode: true});
 
 // Embed
 //import Embed from './embed.js';
