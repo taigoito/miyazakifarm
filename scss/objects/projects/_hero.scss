@@ -3,18 +3,5 @@
  */
 
 .hero {
-  display: flex;
   height: 100vh;
-  justify-content: center;
-  align-items: center;
-
-  &__content {
-    width: 21rem;
-
-    img {
-      padding: 0 12px;
-      background-color: rgba(0,0,0,.15);
-      box-shadow: 0 0 6px 3px rgba(0,0,0,.15);
-    }
-  }
 }

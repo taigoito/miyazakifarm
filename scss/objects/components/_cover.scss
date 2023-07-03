@@ -3,7 +3,7 @@
  */
 
 .cover {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   z-index: -1;
@@ -29,7 +29,7 @@
       background-image: url("./assets/story_01.jpg");
     }
     &.--num_2 {
-      background-image: url("./assets/story_02.jpg");
+      background-image: url("./assets/story_07.jpg");
     }
     &.--num_3 {
       background-image: url("./assets/story_10.jpg");
@@ -41,6 +41,27 @@
     &.--fade {
       opacity: 0;
       transition: none;
+    }
+
+    span {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      display: block;
+      width: 21rem;
+      height: 1.5rem;
+      margin: auto;
+      padding: 0 12px;
+      background-color: rgba(0,0,0,.15);
+      color: themeColor("lightest");
+      font-family: $fontFamilySerif;
+      font-weight: $fontWeightSerif;
+      font-size: $h3FontSize;
+      text-align: center;
+      line-height: 1.5rem;
+      box-shadow: 0 0 6px 3px rgba(0,0,0,.15);
     }
   }
 
