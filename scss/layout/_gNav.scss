@@ -12,7 +12,7 @@
     line-height: 1;
 
     @media (min-width: breakpoint("lg")) {
-      @at-root .header:not(:hover):not(.--change) & {
+      @at-root .header:not(:hover).--transparent & {
         img {
           filter: $whiten;
         }
@@ -40,7 +40,7 @@
 
     a {
       @media (min-width: breakpoint("lg")) {
-        @at-root .header:not(:hover):not(.--change) & {
+        @at-root .header:not(:hover).--transparent & {
           color: themeColor("lightest");
         }
       }
@@ -62,7 +62,7 @@
       }
 
       @media (min-width: breakpoint("lg")) {
-        @at-root .header:not(:hover):not(.--change) & {
+        @at-root .header:not(:hover).--transparent & {
           &::after {
             background: url("./assets/okome.svg") no-repeat center center;
           }
@@ -83,7 +83,7 @@
       }
       
       @media (min-width: breakpoint("lg")) {
-        @at-root .header:not(:hover):not(.--change) & {
+        @at-root .header:not(:hover).--transparent & {
           border-color: themeColor("lightest");
         }
       }

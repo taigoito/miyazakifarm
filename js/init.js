@@ -40,10 +40,8 @@ new Fader();
 const header = document.getElementById('header');
 window.addEventListener('scroll', () => {
   if (window.innerHeight < window.scrollY) {
-    header.classList.add('--change');
-    console.log('add');
+    header.classList.remove('--transparent');
   } else {
-    header.classList.remove('--change');
-    console.log('remove');
+    header.classList.add('--transparent');
   }
 });

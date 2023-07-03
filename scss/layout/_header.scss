@@ -24,7 +24,7 @@ $headerHeight: 6rem;
     }
 
     @media (min-width: breakpoint("lg")) {
-      @at-root .header:not(.--change) & {
+      @at-root .header.--transparent & {
         &:not(:hover) {
           background-color: transparent;
         }
