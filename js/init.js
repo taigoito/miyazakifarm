@@ -37,11 +37,13 @@ new Fader();
 //new Slider();
 
 // スクロールを監視し、ヘッダー色を変更
-const header = document.getElementById('header');
-window.addEventListener('scroll', () => {
-  if (window.innerHeight < window.scrollY) {
-    header.classList.remove('--transparent');
-  } else {
-    header.classList.add('--transparent');
-  }
-});
+const header = document.querySelector('.--transparent');
+if (header) {
+  window.addEventListener('scroll', () => {
+    if (window.innerHeight < window.scrollY) {
+      header.classList.remove('--transparent');
+    } else {
+      header.classList.add('--transparent');
+    }
+  });
+}

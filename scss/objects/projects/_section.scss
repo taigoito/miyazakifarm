@@ -5,12 +5,15 @@
 .section {
   &__inner {
     @include row(flex-end);
-    padding-top: space(5);
-    padding-bottom: space(5);
+    padding-top: space(4);
+    padding-bottom: space(4);
     background-color: themeColor("lightest");
     flex-direction: column-reverse;
 
     @media (min-width: breakpoint("md")) {
+      padding-top: space(5);
+      padding-bottom: space(5);
+
       &.--switched {
         flex-direction: row-reverse;
       }
@@ -22,9 +25,13 @@
   }
 
   &__container {
-    width: min(36rem, 100%);
+    width: 100%;
     padding-left: clamp(1.5rem, 4%, 3rem);
     padding-right: clamp(1.5rem, 4%, 3rem);
+
+    @media (min-width: breakpoint("md")) {
+      width: min(36rem, 50%);
+    }
   }
 
   &__image {
@@ -46,6 +53,26 @@
 
     @at-root #about-us & {
       background: url("./assets/story_03.jpg") no-repeat center center / cover scroll;
+    }
+
+    @at-root #about-us-1 & {
+      background: url("./assets/story_01.jpg") no-repeat center center / cover scroll;
+    }
+
+    @at-root #about-us-2 & {
+      background: url("./assets/story_02.jpg") no-repeat center center / cover scroll;
+    }
+
+    @at-root #about-us-3 & {
+      background: url("./assets/story_04.jpg") no-repeat center center / cover scroll;
+    }
+
+    @at-root #about-us-4 & {
+      background: url("./assets/story_05.jpg") no-repeat center center / cover scroll;
+    }
+
+    @at-root #about-us-5 & {
+      background: url("./assets/story_09.jpg") no-repeat center center / cover scroll;
     }
 
     @at-root #shop & {
