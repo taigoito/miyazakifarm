@@ -5,14 +5,13 @@
 .section {
   &__inner {
     @include row(flex-end);
-    padding-top: space(4);
-    padding-bottom: space(4);
+    padding-top: 0;
+    padding-bottom: space(5);
     background-color: themeColor("lightest");
     flex-direction: column-reverse;
 
     @media (min-width: breakpoint("md")) {
       padding-top: space(5);
-      padding-bottom: space(5);
 
       &.--switched {
         flex-direction: row-reverse;
