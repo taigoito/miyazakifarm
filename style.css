@@ -142,7 +142,7 @@ button, input, select, textarea {
 /**
  * Layout
  */
-.pageHeader__container, .header__container, .--flexItem_12, .--flexItem_11, .--flexItem_10, .--flexItem_9, .--flexItem_8, .--flexItem_7, .--flexItem_6, .--flexItem_5, .--flexItem_4, .--flexItem_3, .--flexItem_2, .postList.--list .postItem__content, .postList.--list .postItem__image, .postList.--grid .postList__item, .postItem.--single .postItem__content, .postItem.--single .postItem__image {
+.header__container, .--flexItem_12, .--flexItem_11, .--flexItem_10, .--flexItem_9, .--flexItem_8, .--flexItem_7, .--flexItem_6, .--flexItem_5, .--flexItem_4, .--flexItem_3, .--flexItem_2, .postList.--list .postItem__content, .postList.--list .postItem__image, .postList.--grid .postList__item, .postItem.--single .postItem__content, .postItem.--single .postItem__image {
   position: relative;
   flex: auto;
   width: 100%;
@@ -155,7 +155,7 @@ button, input, select, textarea {
   padding-right: 0.75rem;
 }
 
-.pageHeader__container, .header__container {
+.header__container {
   padding-left: clamp(0.75rem, 2%, 24px);
   padding-right: clamp(0.75rem, 2%, 24px);
 }
@@ -1071,19 +1071,39 @@ button, input, select, textarea {
   padding-top: 6rem;
 }
 .pageHeader__container {
+  position: relative;
+  flex: auto;
+  width: 100%;
   max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (min-width: 900px) {
+  .pageHeader__container {
+    padding-left: clamp(0.75rem, 2%, 24px);
+    padding-right: clamp(0.75rem, 2%, 24px);
+  }
 }
 .pageHeader__title {
   color: #808080;
-  font-family: "Sawarabi Mincho", serif;
+  font-family: "Kiwi Maru";
   font-weight: 400;
-  text-align: right;
+  text-align: center;
+}
+@media (min-width: 900px) {
+  .pageHeader__title {
+    text-align: right;
+  }
 }
 .pageHeader__image {
   width: 100%;
   height: 80vh;
-  border-radius: 1.5rem;
   background: url("./assets/story_03.jpg") no-repeat center center/cover scroll;
+}
+@media (min-width: 900px) {
+  .pageHeader__image {
+    border-radius: 1.5rem;
+  }
 }
 .pageHeader__content {
   margin: 3rem;
