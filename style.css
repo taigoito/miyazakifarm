@@ -467,16 +467,16 @@ button, input, select, textarea {
   transition: 1s linear opacity;
 }
 .cover__image.--num_1 {
-  background-image: url("./assets/story_01.jpg");
+  background-image: url("./assets/story_00.jpg");
 }
 .cover__image.--num_2 {
-  background-image: url("./assets/story_07.jpg");
+  background-image: url("./assets/story_01.jpg");
 }
 .cover__image.--num_3 {
-  background-image: url("./assets/story_10.jpg");
+  background-image: url("./assets/story_13.jpg");
 }
 .cover__image.--num_4 {
-  background-image: url("./assets/story_11.jpg");
+  background-image: url("./assets/story_15.jpg");
 }
 .cover__image.--fade {
   opacity: 0;
@@ -1098,7 +1098,7 @@ button, input, select, textarea {
 .pageHeader__image {
   width: 100%;
   height: 80vh;
-  background: url("./assets/story_03.jpg") no-repeat center center/cover scroll;
+  background: url("./assets/story_04.jpg") no-repeat center center/cover scroll;
 }
 @media (min-width: 900px) {
   .pageHeader__image {
@@ -1158,35 +1158,31 @@ button, input, select, textarea {
   }
 }
 #about-taste .section__image {
-  background: url("./assets/story_12.jpg") no-repeat center center/cover scroll;
+  background: url("./assets/story_16.jpg") no-repeat center center/cover scroll;
 }
 
 #about-us .section__image {
-  background: url("./assets/story_03.jpg") no-repeat center center/cover scroll;
-}
-
-#about-us-1 .section__image {
-  background: url("./assets/story_01.jpg") no-repeat center center/cover scroll;
-}
-
-#about-us-2 .section__image {
   background: url("./assets/story_02.jpg") no-repeat center center/cover scroll;
 }
 
-#about-us-3 .section__image {
-  background: url("./assets/story_04.jpg") no-repeat center center/cover scroll;
-}
-
-#about-us-4 .section__image {
+#about-us-1 .section__image {
   background: url("./assets/story_05.jpg") no-repeat center center/cover scroll;
 }
 
-#about-us-5 .section__image {
-  background: url("./assets/story_09.jpg") no-repeat center center/cover scroll;
+#about-us-2 .section__image {
+  background: url("./assets/story_06.jpg") no-repeat center center/cover scroll;
+}
+
+#about-us-3 .section__image {
+  background: url("./assets/story_07.jpg") no-repeat center center/cover scroll;
+}
+
+#about-us-4 .section__image {
+  background: url("./assets/story_10.jpg") no-repeat center center/cover scroll;
 }
 
 #shop .section__image {
-  background: url("./assets/story_04.jpg") no-repeat center center/cover scroll;
+  background: url("./assets/story_03.jpg") no-repeat center center/cover scroll;
 }
 
 .section__more {
