@@ -50,6 +50,22 @@
       background: url("./assets/story_16.jpg") no-repeat center center / cover scroll;
     }
 
+    @at-root #about-taste-1 & {
+      background: url("./assets/story_14.jpg") no-repeat center center / cover scroll;
+    }
+
+    @at-root #about-taste-2 & {
+      background: url("./assets/story_12.jpg") no-repeat center center / cover scroll;
+    }
+
+    @at-root #about-taste-3 & {
+      background: url("./assets/story_11.jpg") no-repeat center center / cover scroll;
+    }
+
+    @at-root #about-taste-4 & {
+      background: url("./assets/story_17.jpg") no-repeat center center / cover scroll;
+    }
+
     @at-root #about-us & {
       background: url("./assets/story_02.jpg") no-repeat center center / cover scroll;
     }
@@ -63,14 +79,18 @@
     }
 
     @at-root #about-us-3 & {
-      background: url("./assets/story_07.jpg") no-repeat center center / cover scroll;
+      background: url("./assets/story_06.jpg") no-repeat center center / cover scroll;
     }
 
     @at-root #about-us-4 & {
+      background: url("./assets/story_07.jpg") no-repeat center center / cover scroll;
+    }
+
+    @at-root #about-us-5 & {
       background: url("./assets/story_10.jpg") no-repeat center center / cover scroll;
     }
 
-    @at-root #shop & {
+    @at-root #products & {
       background: url("./assets/story_03.jpg") no-repeat center center / cover scroll;
     }
   }
