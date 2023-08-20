@@ -1191,7 +1191,11 @@ button, input, select, textarea {
 }
 
 #about-taste-4 .section__image {
-  background: url("./assets/story_17.jpg") no-repeat center center/cover scroll;
+  background: url("./assets/story_18.jpg") no-repeat center center/cover scroll;
+}
+
+#about-taste-5 .section__image {
+  background: url("./assets/story_19.jpg") no-repeat center center/cover scroll;
 }
 
 #about-us .section__image {
@@ -1382,6 +1386,17 @@ a:hover .section__moreBtn {
     flex: 5 1 30rem;
   }
 }
+.product__label {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 0.75rem;
+  justify-content: flex-end;
+  margin: 1.5rem;
+}
+.product__label figure {
+  flex: 0 0 3rem;
+  margin: 0;
+}
 .product__smallImages {
   display: flex;
   flex-flow: row nowrap;
@@ -1402,6 +1417,7 @@ a:hover .section__moreBtn {
   border-radius: 0.75rem;
 }
 .product__smallImages figcaption {
+  margin: 0.75rem auto;
   line-height: 1.2;
 }
 .product__tags {
@@ -1432,6 +1448,18 @@ a:hover .section__moreBtn {
   .product__desc {
     text-align: center;
   }
+}
+.product__more {
+  margin: 3rem auto;
+  text-align: center;
+}
+.product__moreBtn {
+  width: 6rem;
+  margin-right: 1.5rem;
+  vertical-align: middle;
+}
+a:hover .product__moreBtn {
+  opacity: 0.7;
 }
 
 /**

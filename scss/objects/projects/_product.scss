@@ -33,6 +33,19 @@
     @include col(5, true, "md");
   }
 
+  &__label {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: space(2);
+    justify-content: flex-end;
+    margin: space(3);
+
+    figure {
+      flex: 0 0 3rem;
+      margin: 0;
+    }
+  }
+
   &__smallImages {
     display: flex;
     flex-flow: row nowrap;
@@ -54,6 +67,7 @@
     }
 
     figcaption {
+      margin: space(2) auto;
       line-height: 1.2;
     }
   }
@@ -83,6 +97,21 @@
 
     @media (min-width: breakpoint("md")) {
       text-align: center;
+    }
+  }
+
+  &__more {
+    margin: space(4) auto;
+    text-align: center;
+  }
+
+  &__moreBtn {
+    width: 6rem;
+    margin-right: space(3);
+    vertical-align: middle;
+
+    a:hover & {
+      opacity: 0.7;
     }
   }
 }
