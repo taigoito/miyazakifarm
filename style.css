@@ -63,17 +63,17 @@ h6 {
 
 p {
   margin-top: 0;
-  margin-bottom: 0.75rem;
+  margin-bottom: 1rem;
 }
 
 ol, ul {
   margin-top: 0;
-  margin-bottom: 0.75rem;
+  margin-bottom: 1rem;
 }
 
 li {
   margin-top: 0;
-  margin-bottom: 0.75rem;
+  margin-bottom: 1rem;
 }
 
 strong {
@@ -88,7 +88,7 @@ small {
 
 blockquote {
   margin-top: 0;
-  margin-bottom: 0.75rem;
+  margin-bottom: 1rem;
   padding-left: 1em;
   border-left: 4px solid #262626;
 }
@@ -116,7 +116,7 @@ img {
 
 figure {
   display: block;
-  margin: 0 auto 0.75rem;
+  margin: 0 auto 1rem;
 }
 
 figcaption {
@@ -468,12 +468,15 @@ button, input, select, textarea {
 }
 .cover__image.--num_1 {
   background-image: url("./assets/story_00.jpg");
+  background-position: 20% center;
 }
 .cover__image.--num_2 {
   background-image: url("./assets/story_01.jpg");
+  background-position: 20% center;
 }
 .cover__image.--num_3 {
   background-image: url("./assets/story_13.jpg");
+  background-position: 70% center;
 }
 .cover__image.--num_4 {
   background-image: url("./assets/story_15.jpg");
@@ -1123,7 +1126,7 @@ button, input, select, textarea {
   }
 }
 .pageHeader__content {
-  margin: 3rem;
+  margin: 3rem 3rem 6rem;
   text-align: center;
 }
 
@@ -1163,11 +1166,17 @@ button, input, select, textarea {
 }
 .section__image {
   width: 100%;
-  height: 80vh;
+  height: 50vh;
+}
+@media (min-width: 600px) {
+  .section__image {
+    height: 65vh;
+  }
 }
 @media (min-width: 900px) {
   .section__image {
     width: 50%;
+    height: 80vh;
     border-radius: 1.5rem 0 0 1.5rem;
   }
   .--switched .section__image {
@@ -1195,7 +1204,7 @@ button, input, select, textarea {
 }
 
 #about-taste-5 .section__image {
-  background: url("./assets/story_19.jpg") no-repeat center center/cover scroll;
+  background: url("./assets/story_19.jpg") no-repeat 40% center/cover scroll;
 }
 
 #about-us .section__image {
@@ -1360,8 +1369,9 @@ a:hover .section__moreBtn {
 .product__heading {
   padding-left: 0.75rem;
   padding-right: 0.75rem;
-  font-family: "Sawarabi Mincho", serif;
+  font-family: "Kiwi Maru";
   font-weight: 400;
+  letter-spacing: 0.1em;
 }
 @media (min-width: 900px) {
   .product__main {

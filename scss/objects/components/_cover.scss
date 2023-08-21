@@ -27,12 +27,15 @@
     // 画像の数とパスを設定
     &.--num_1 {
       background-image: url("./assets/story_00.jpg");
+      background-position: 20% center;
     }
     &.--num_2 {
       background-image: url("./assets/story_01.jpg");
+      background-position: 20% center;
     }
     &.--num_3 {
       background-image: url("./assets/story_13.jpg");
+      background-position: 70% center;
     }
     &.--num_4 {
       background-image: url("./assets/story_15.jpg");

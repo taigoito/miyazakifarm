@@ -8,8 +8,9 @@
   &__heading {
     padding-left: $gutter;
     padding-right: $gutter;
-    font-family: $fontFamilySerif;
-    font-weight: $fontWeightSerif;
+    font-family: "Kiwi Maru";
+    font-weight: 400;
+    letter-spacing: 0.1em;
   }
 
   &__main {
