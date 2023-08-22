@@ -1115,7 +1115,7 @@ button, input, select, textarea {
   background: url("./assets/story_13.jpg") no-repeat center center/cover scroll;
 }
 .pageHeader__image.--aboutUs {
-  background: url("./assets/story_04.jpg") no-repeat center center/cover scroll;
+  background: url("./assets/story_20.jpg") no-repeat center 80%/cover scroll;
 }
 .pageHeader__image.--products {
   background: url("./assets/story_17.jpg") no-repeat center center/cover scroll;
@@ -1220,11 +1220,11 @@ button, input, select, textarea {
 }
 
 #about-us-3 .section__image {
-  background: url("./assets/story_06.jpg") no-repeat center center/cover scroll;
+  background: url("./assets/story_09.jpg") no-repeat center center/cover scroll;
 }
 
 #about-us-4 .section__image {
-  background: url("./assets/story_07.jpg") no-repeat center center/cover scroll;
+  background: url("./assets/story_07.jpg") no-repeat left center/cover scroll;
 }
 
 #about-us-5 .section__image {
