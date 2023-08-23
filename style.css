@@ -142,7 +142,7 @@ button, input, select, textarea {
 /**
  * Layout
  */
-.product, .header__container, .--flexItem_12, .--flexItem_11, .--flexItem_10, .--flexItem_9, .--flexItem_8, .--flexItem_7, .--flexItem_6, .--flexItem_5, .--flexItem_4, .--flexItem_3, .--flexItem_2, .product__content, .product__largeImage, .postList.--list .postItem__content, .postList.--list .postItem__image, .postList.--grid .postList__item, .postItem.--single .postItem__content, .postItem.--single .postItem__image {
+.hometown-tax, .product, .header__container, .--flexItem_12, .--flexItem_11, .--flexItem_10, .--flexItem_9, .--flexItem_8, .--flexItem_7, .--flexItem_6, .--flexItem_5, .--flexItem_4, .--flexItem_3, .--flexItem_2, .product__content, .product__largeImage, .postList.--list .postItem__content, .postList.--list .postItem__image, .postList.--grid .postList__item, .postItem.--single .postItem__content, .postItem.--single .postItem__image {
   position: relative;
   flex: auto;
   width: 100%;
@@ -155,7 +155,7 @@ button, input, select, textarea {
   padding-right: 0.75rem;
 }
 
-.product, .header__container {
+.hometown-tax, .product, .header__container {
   padding-left: clamp(0.75rem, 2%, 24px);
   padding-right: clamp(0.75rem, 2%, 24px);
 }
@@ -1120,6 +1120,9 @@ button, input, select, textarea {
 .pageHeader__image.--products {
   background: url("./assets/story_17.jpg") no-repeat center center/cover scroll;
 }
+.pageHeader__image.--hometown-tax {
+  background: url("./assets/hometown-tax.jpg") no-repeat center center/cover scroll;
+}
 @media (min-width: 900px) {
   .pageHeader__image {
     border-radius: 1.5rem;
@@ -1470,6 +1473,23 @@ a:hover .section__moreBtn {
 }
 a:hover .product__moreBtn {
   opacity: 0.7;
+}
+
+/*
+ * Project - Hometown Tax
+ */
+.hometown-tax {
+  max-width: 1200px;
+  display: flex;
+  flex-flow: row wrap;
+  gap: 1.5rem;
+  padding-bottom: 6rem;
+}
+.hometown-tax__item {
+  flex: 1 1 18rem;
+}
+.hometown-tax__item figcaption {
+  margin: 0.75rem auto;
 }
 
 /**

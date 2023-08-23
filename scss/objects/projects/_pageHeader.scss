@@ -57,6 +57,10 @@
       background: url("./assets/story_17.jpg") no-repeat center center / cover scroll;
     }
 
+    &.--hometown-tax {
+      background: url("./assets/hometown-tax.jpg") no-repeat center center / cover scroll;
+    }
+
     @media (min-width: breakpoint("md")) {
       border-radius: space(3);
     }
