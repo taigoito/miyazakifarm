@@ -80,7 +80,11 @@
     gap: space(2);
     justify-content: center;
     margin: 1.5rem auto;
-    @include smallText();
+    font-size: 0.8rem;
+
+    @media (min-width: breakpoint("md")) {
+      @include smallText();
+    }
   }
 
   &__tag {

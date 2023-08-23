@@ -1441,9 +1441,14 @@ a:hover .section__moreBtn {
   gap: 0.75rem;
   justify-content: center;
   margin: 1.5rem auto;
-  font-size: 0.875rem;
-  line-height: 2.025;
-  letter-spacing: 0.04rem;
+  font-size: 0.8rem;
+}
+@media (min-width: 900px) {
+  .product__tags {
+    font-size: 0.875rem;
+    line-height: 2.025;
+    letter-spacing: 0.04rem;
+  }
 }
 .product__tag {
   padding: 0.375rem;
