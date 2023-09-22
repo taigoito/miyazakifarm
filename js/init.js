@@ -5,36 +5,20 @@
  */
 
 // Back To Top
-//import BackToTop from './backToTop.js';
+import BackToTop from './_backToTop.js';
 new BackToTop();
 
 // Drawer Menu
-//import DrawerMenu from './drawerMenu.js';
+import DrawerMenu from './_drawerMenu.js';
 new DrawerMenu({darkMode: true});
 
-// Embed
-//import Embed from './embed.js';
-new Embed();
-
 // Evil Icons
-//import EvilIcons from './evilIcons.js';
+import EvilIcons from './_evilIcons.js';
 new EvilIcons();
 
 // Fader
-//import Fader from './fader.js';
+import Fader from './_fader.js';
 new Fader();
-
-// Preloader
-//import Preloader from './js/preloader.js';
-//new Preloader();
-
-// Responsive Color
-//import ResponsiveColor from './js/responsiveColor.js';
-//new ResponsiveColor();
-
-// Slider
-//import Slider from './js/slider.js';
-//new Slider();
 
 // スクロールを監視し、ヘッダー色を変更
 const header = document.querySelector('.--transparent');
