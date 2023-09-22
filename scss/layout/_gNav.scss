@@ -10,14 +10,6 @@
     flex: 0 1 12rem;
     margin: 0;
     line-height: 1;
-
-    @media (min-width: breakpoint("lg")) {
-      @at-root .header:not(:hover).--transparent & {
-        img {
-          filter: $whiten;
-        }
-      }
-    }
   }
 
   &__primaryMenu {

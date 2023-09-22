@@ -206,11 +206,6 @@ button, input, select, textarea {
   margin: 0;
   line-height: 1;
 }
-@media (min-width: 1200px) {
-  .header:not(:hover).--transparent .gNav__siteBrand img {
-    filter: invert(1) grayscale(1) brightness(4);
-  }
-}
 .gNav__primaryMenu {
   display: flex;
   flex-wrap: wrap;
@@ -630,7 +625,7 @@ button, input, select, textarea {
   text-decoration: none;
 }
 .drawerMenu.--dark {
-  background-color: hsl(352, 65%, 30%);
+  background-color: hsl(352, 100%, 15%);
 }
 .drawerMenu.--dark .drawerMenu__item a {
   color: #ffffff;
@@ -785,10 +780,10 @@ button, input, select, textarea {
   left: 0;
   right: 0;
   bottom: 0;
-  z-index: 900;
+  z-index: 1100;
   width: 100%;
   height: 100vh;
-  background: hsl(352, 65%, 30%);
+  background: hsl(352, 100%, 15%);
   opacity: 1;
   transition: opacity ease-in-out 0.5s;
 }
